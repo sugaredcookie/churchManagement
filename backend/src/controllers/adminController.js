@@ -105,6 +105,7 @@ exports.createAdmin = catchAsync(async (req, res, next) => {
 
   // Generate secure password
   const plainPassword = generateSecurePassword();
+  console.log(plainPassword);
 
   // Create admin user
   const admin = await User.create({

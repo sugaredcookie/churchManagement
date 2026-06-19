@@ -39,6 +39,7 @@ exports.signup = catchAsync(async (req, res, next) => {
 
   // Generate secure password
   const plainPassword = generateSecurePassword();
+  console.log(plainPassword);
 
   // Create user
   const user = await User.create({

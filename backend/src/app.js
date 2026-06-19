@@ -39,7 +39,7 @@ app.use('/api/consent', consentRoutes);
 app.use('/api/admin', adminRoutes);
 
 // Health check
-app.get('/health', (req, res) => {
+app.get('/', (req, res) => {
   res.status(200).json({ status: 'OK', message: 'Server is running' });
 });
 
