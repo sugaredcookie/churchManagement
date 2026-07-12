@@ -91,7 +91,7 @@ const LandingPage = () => {
             </motion.div>
 
             {/* Stats */}
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -108,7 +108,7 @@ const LandingPage = () => {
                   <div className="text-gray-600 mt-2">{stat.label}</div>
                 </div>
               ))}
-            </motion.div>
+            </motion.div> */}
           </div>
         </div>
       </div>
